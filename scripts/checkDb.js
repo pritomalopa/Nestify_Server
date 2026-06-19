@@ -1,11 +1,4 @@
-/**
- * Diagnostic helper: prints exactly what database/collection state the server
- * would see if it started right now with your current .env. Run this whenever
- * something "should be there" on the website but isn't showing up.
- *
- * Usage (run from inside the /server folder):
- *   node scripts/checkDb.js
- */
+
 require('dotenv').config();
 const mongoose = require('mongoose');
 const connectDB = require('../config/db');
