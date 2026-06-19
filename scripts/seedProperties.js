@@ -1,12 +1,4 @@
-/**
- * Seeds a handful of pre-Approved sample properties so the site looks
- * populated while you're testing.
- *
- * Usage (run from inside the /server folder after npm install):
- *   node scripts/seedProperties.js owner@nestify.com "Owner Demo"
- *
- * NOTE: Run scripts/setRole.js first to make that email an 'owner'.
- */
+
 require('dotenv').config();
 const mongoose = require('mongoose');
 const connectDB = require('../config/db');
@@ -14,7 +6,7 @@ const Property = require('../models/Property');
 
 const [, , ownerEmail, ownerName] = process.argv;
 
-// Using Pexels CDN images — globally reliable, no hotlink restrictions
+
 const sampleProperties = [
   {
     title: 'Riverside 2-Bed Apartment in Gulshan',
