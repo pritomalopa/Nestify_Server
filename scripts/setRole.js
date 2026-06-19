@@ -1,15 +1,4 @@
-/**
- * One-time bootstrap utility: promotes an already-registered user to 'owner' or 'admin'.
- *
- * Why this exists: Nestify's UI never lets anyone choose their own role (every signup,
- * including Google, becomes a 'tenant' on purpose). So to get your first Owner or Admin
- * account, you register normally through the website and then run this script once to
- * upgrade that account's role directly in the database.
- *
- * Usage (run from inside the /server folder):
- *   node scripts/setRole.js owner@nestify.com owner
- *   node scripts/setRole.js admin@nestify.com admin
- */
+
 require('dotenv').config();
 const mongoose = require('mongoose');
 const connectDB = require('../config/db');
